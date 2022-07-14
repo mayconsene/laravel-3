@@ -15,7 +15,8 @@
         @foreach ($products as $product)
 
             <li>
-                {{$product->name}} - R$ {{$product->description}} - {{$product->price}}
+                {{$product->name}} - {{$product->description}} - R$ {{$product->price}}
+                <a href="/products/show{{$product->id}}">Ver mais</a>
             </li>
         
         @endforeach
